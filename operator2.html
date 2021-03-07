@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Second Example
+        </title>
+    </head>
+<body>
+
+<table>
+  <tr>
+    <td>
+      Enter The First Number:- 
+    </td>
+    <td>
+      <input type="text" id="t1"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Enter the Second Number:-
+    </td>
+    <td>
+      <input type="text" id="t2"/>
+    </td>
+  </tr>
+</table>
+
+<button onclick="check()">Check Now</button>
+<script>
+   function check() {
+     var a = parseFloat(document.getElementById("t1").value);   //parseInt() //parseFloat()
+     var b = parseFloat(document.getElementById("t2").value);
+     var c = a + b;
+     alert(c);
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Class</title>
+</head>
+<body>
+    <div>
+        Enter the 1 Number:- <input type="text" id="text1"/><br><br>
+        
+        Enter the 2 Number:- <input type="text" id="text2"/><br><br>
+        
+        Result :- <input type="text" id="txtresult"/><br><br>
+        
+        <button onclick="test()">Display</button>
+
+        <script>
+            function test(){
+                var fn = parseInt(document.getElementById('text1').value);
+                var sn = parseInt(document.getElementById("text2").value);
+                var result = fn + sn;
+                document.getElementById('txtresult').value = result;
+            }
+        </script>
+    </div>
+    
+</body>
+</html>

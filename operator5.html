@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Class</title>
+</head>
+<body>
+    <h1> JS Logical Comparison </h1>
+    <p id ="first"></p>
+    <p id = "second"></p>
+    <p id = "third"></p>
+
+    <script>
+        var x = 6;
+        var y = 3;
+
+        document.getElementById("first").innerHTML = (x < 10 && y > 1) + "<br>" + (x < 10 && y < 1);
+        document.getElementById("second").innerHTML = (x == 5 || y ==5) + "<br>" + (x == 6 || y == 0) + "<br>" + (x == 0 || y ==3) +
+        "<br>"+ (y == 6 || y == 3);
+        document.getElementById("third").innerHTML = 
+        !(x==y) + "<br>" + 
+        !(x>y);
+    </script>
+</body>
+</html>
